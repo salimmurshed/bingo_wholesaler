@@ -1,0 +1,1 @@
+enum LoginFailure { invalidCredentials, error }

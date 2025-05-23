@@ -1,0 +1,157 @@
+name: bingo
+description: Bingo
+publish_to: 'none'
+version: 1.0.1+14
+
+
+
+environment:
+  sdk: '>=3.3.4 <3.22.2'
+dependencies:
+  flutter:
+    sdk: flutter
+  #  flutter_web_plugins:
+  #    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  stacked: ^3.0.0
+  get_it: ^8.0.3
+  injectable: ^2.3.0
+  intl: ^0.19.0
+  json_annotation: ^4.7.0
+  dartz: ^0.10.1
+  dio: ^5.2.1+1
+  shared_preferences: ^2.2.2
+  connectivity_plus: ^5.0.2
+  connectivity_plus_web:
+  http:
+  json_serializable: ^6.5.4
+  sqflite: ^2.3.0
+  path_provider:
+  auto_size_text:
+  qr_flutter: ^4.1.0
+  shimmer: ^3.0.0
+  flutter_holo_date_picker: ^2.0.0
+  loading_animation_widget: ^1.2.0+3
+  image_picker: ^1.1.0
+  fluttertoast: ^8.1.2
+  permission_handler: ^11.3.1
+  multi_select_flutter: ^4.1.3
+  dropdown_button2: ^2.3.9
+  file_picker: ^8.1.7
+  flutter_google_places: ^0.3.0
+  google_maps_webservice:
+  url_launcher: ^6.1.7
+  google_api_headers: ^1.6.0
+  syncfusion_flutter_core: ^20.4.54
+  syncfusion_flutter_pdf:
+  syncfusion_flutter_pdfviewer:
+  syncfusion_flutter_barcodes:
+  firebase_core: ^3.10.0
+  firebase_analytics: ^11.0.1
+  firebase_crashlytics: ^4.0.1
+  firebase_messaging: ^15.2.0
+  firebase_core_platform_interface: ^5.1.0
+  geocoding: ^3.0.0
+  google_maps_flutter: ^2.5.0
+  encrypt: ^5.0.1
+  cached_network_image: ^3.3.1
+  qr_code_scanner: ^1.0.1
+  camera:
+  calendar_date_picker2: ^1.1.8
+  encryptor: ^0.0.1
+  geolocator:
+  localization: ^2.1.0
+  collection: ^1.14.13
+  webview_flutter: ^4.2.1
+  flutter_html: "3.0.0-beta.2"
+  flutter_polyline_points:
+  carousel_slider: ^5.0.0
+  flutter_local_notifications: ^18.0.1
+  notification_permissions: ^0.6.1
+  showcaseview: ^4.0.0
+  package_info_plus:
+  local_auth: ^2.1.8
+  workmanager: ^0.5.1
+  drago_virtual_keyboard: ^0.0.6
+  pinenacl: ^0.6.0
+  cryptography: ^2.7.0
+  clear_all_notifications: ^1.0.0
+  flutter_otp_text_field: ^1.1.0+2
+  app_settings: ^5.0.0
+  go_router:
+  flutter_bootstrap5:
+  universal_html:
+  to_csv:
+  xml:
+  image_network:
+  device_info_plus:
+  #  custom_searchable_dropdown: ^2.1.1
+
+  #  html_editor_enhanced: ^2.5.1
+  #  flutter_inappwebview: ^6.0.0
+  flutter_keyboard_visibility: ^6.0.0
+  visibility_detector: ^0.4.0+2
+  flex_color_picker: ^3.5.0
+  numberpicker: ^2.1.2
+  flutter_side_menu:
+  grouped_list: ^6.0.0
+  stacked_hooks: ^0.2.4
+
+
+
+
+#dependency_overrides:
+#  google_api_headers: 4.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  #  shared_preferences_mocks: ^0.0.1
+  flutter_lints:
+  mockito: ^5.3.2
+  mocktail: ^1.0.4
+  build_runner: ^2.3.2
+  injectable_generator: ^2.4.0
+  sqflite_common_ffi:
+  connectivity_platform_interface:
+
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/login_design/
+    - assets/images/
+    - assets/web/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Thin.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-Regular.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 800
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 900
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Thin.ttf
+          weight: 500
+        - asset: assets/fonts/Lato/Lato-light.ttf
+          weight: 600
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
+          weight: 700
+        - asset: assets/fonts/Lato/Lato-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/Lato/Lato-Black.ttf
+          weight: 900

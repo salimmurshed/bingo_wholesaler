@@ -1,0 +1,83 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Android Development
+
+on:
+  push: # Set Push Request Branch
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env: # Set Keystore Variable
+      KEYSTORE: ${{ secrets.KEYSTORE }}
+      KEY_PATH: ${{ '/home/runner/work/Flutter-Bingo/Flutter-Bingo/android/app/external/bingo_keystore.jks' }}
+      KEY_PASS: ${{ secrets.KEY_PASS }}
+      KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+      STORE_PASS: ${{ secrets.STORE_PASS }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+
+    steps:
+      - name: Checkout Action
+        uses: actions/checkout@v3
+
+      - name: Install Java (Android)
+        uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+
+      # Decode Keystore File for Sign App
+      - name: Create Key File (Android)
+        run: echo $KEYSTORE | base64 -di > /home/runner/work/Flutter-Bingo/Flutter-Bingo/android/app/external/bingo_keystore.jks
+
+
+      # Set-up Flutter for run the code
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.10'
+          channel: 'stable'
+
+      - name: Pub Get
+        run: flutter pub get
+
+      # Fire command for Android build
+      - name: Development Android Build dev
+        run: flutter build apk --release -t lib/main_dev.dart --flavor=dev --split-per-abi
+
+      # Fire command for Android build
+      - name: Development Android Build qa
+        run: flutter build apk --release -t lib/main_qa.dart --flavor=qa --split-per-abi
+
+      # Upload Android Artifact
+      - name: Upload Android Artifact
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          name: Android Build Artifact
+          path: build/app/outputs/flutter-apk/app-armeabi-v7a-dev-release.apk
+
+      # Upload Android Dev Artifact on slack
+      - name: Upload to slack step
+        uses: MeilCli/slack-upload-file@v1
+        with:
+          slack_token: ${{ secrets.SLACK_TOKEN }}
+          channels: ${{ secrets.SLACK_CHANNEL }}
+          file_path: '/home/runner/work/Flutter-Bingo/Flutter-Bingo/build/app/outputs/flutter-apk/app-armeabi-v7a-dev-release.apk'
+          file_name: 'app-armeabi-v7a-dev-release.apk'
+          file_type: 'apk'
+          retries: 0
+          initial_comment: '*_Bingo Android Development Apk_* :hello_android:'
+        continue-on-error: true
+        if: always()
+
+      # Send message to Slack final Status:
+      - name: Slack job status notify
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          config: .github/slack.yml

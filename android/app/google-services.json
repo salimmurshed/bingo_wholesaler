@@ -1,0 +1,222 @@
+{
+  "project_info": {
+    "project_number": "119212193003",
+    "project_id": "bingo01",
+    "storage_bucket": "bingo01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119212193003:android:5e51757645e3bd31d2baae",
+        "android_client_info": {
+          "package_name": "com.app.bingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119212193003-gc0e1l63o88rsbttb9i6pak527bof045.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bingo",
+            "certificate_hash": "8f53042b533787c3256c5df3f7a843760504d48c"
+          }
+        },
+        {
+          "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwIpC-1ikyuZlugaG8-KkLqdZAWR034s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119212193003-93o1dpki8rrpsu21q2rqsv0h8spp0t9i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bingo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119212193003:android:2e4bd311fab1439cd2baae",
+        "android_client_info": {
+          "package_name": "com.bingo.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwIpC-1ikyuZlugaG8-KkLqdZAWR034s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119212193003-93o1dpki8rrpsu21q2rqsv0h8spp0t9i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bingo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119212193003:android:2d81b58cbf3d7c51d2baae",
+        "android_client_info": {
+          "package_name": "com.bingo.dev.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119212193003-ql6ge2scdqil79dpanvj7ml1pqe3u5sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingo.dev.dev",
+            "certificate_hash": "8f53042b533787c3256c5df3f7a843760504d48c"
+          }
+        },
+        {
+          "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwIpC-1ikyuZlugaG8-KkLqdZAWR034s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119212193003-93o1dpki8rrpsu21q2rqsv0h8spp0t9i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bingo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119212193003:android:9abcf9e4488856c4d2baae",
+        "android_client_info": {
+          "package_name": "com.bingo.dev.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119212193003-bl3tp6tjg72irpnglf13l8u6ulc5h6kr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingo.dev.qa",
+            "certificate_hash": "8f53042b533787c3256c5df3f7a843760504d48c"
+          }
+        },
+        {
+          "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwIpC-1ikyuZlugaG8-KkLqdZAWR034s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119212193003-93o1dpki8rrpsu21q2rqsv0h8spp0t9i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bingo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119212193003:android:a2620798ae10666ad2baae",
+        "android_client_info": {
+          "package_name": "com.bingo.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119212193003-a2he1l3l1d55gvdlj84shmadkk96qkad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingo.qa",
+            "certificate_hash": "8f53042b533787c3256c5df3f7a843760504d48c"
+          }
+        },
+        {
+          "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwIpC-1ikyuZlugaG8-KkLqdZAWR034s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119212193003-qjc3403p0c4rqsgc75nbh143ib2cg7jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119212193003-93o1dpki8rrpsu21q2rqsv0h8spp0t9i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bingo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

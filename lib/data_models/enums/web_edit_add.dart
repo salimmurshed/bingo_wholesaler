@@ -1,0 +1,1 @@
+enum WebEditNew { edit, add }

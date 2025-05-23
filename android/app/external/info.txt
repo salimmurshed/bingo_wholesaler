@@ -1,0 +1,7 @@
+Password: bingo2023
+First and last name : salim murshed
+Organisation unit: development
+Organisation: vitec
+City: surat
+State: gujarat
+Country code: in
